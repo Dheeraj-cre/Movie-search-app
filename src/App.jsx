@@ -72,23 +72,45 @@ function App() {
       <SearchBar onSearch={searchMovies} />
 
       {/* 🎥 OTT PLATFORM LOGOS */}
-      <div className="platform-logos">
-        <a href="https://www.netflix.com" target="_blank" rel="noreferrer">
-          <img src="/logos/netflix.png" alt="Netflix" />
-        </a>
+     {/* 🎥 OTT PLATFORM LOGOS */}
+<div className="platform-logos">
+  <a href="https://www.netflix.com" target="_blank" rel="noreferrer">
+    <div className="platform-item">
+      <img src="/logos/netflix.png" alt="Netflix" />
+      <span>Netflix</span>
+    </div>
+  </a>
 
-        <a href="https://www.primevideo.com" target="_blank" rel="noreferrer">
-          <img src="/logos/prime.png" alt="Amazon Prime Video" />
-        </a>
+  <a href="https://www.primevideo.com" target="_blank" rel="noreferrer">
+    <div className="platform-item">
+      <img src="/logos/prime.png" alt="Amazon Prime Video" />
+      <span>Prime Video</span>
+    </div>
+  </a>
 
-        <a href="https://www.disneyplus.com" target="_blank" rel="noreferrer">
-          <img src="/logos/disney.png" alt="Disney+" />
-        </a>
+  <a href="https://www.disneyplus.com" target="_blank" rel="noreferrer">
+    <div className="platform-item">
+      <img src="/logos/disney.png" alt="Disney+" />
+      <span>Disney+</span>
+    </div>
+  </a>
 
-        <a href="https://www.hotstar.com" target="_blank" rel="noreferrer">
-          <img src="/logos/hotstar.png" alt="Hotstar" />
-        </a>
-      </div>
+  <a href="https://www.hotstar.com" target="_blank" rel="noreferrer">
+    <div className="platform-item">
+      <img src="/logos/hotstar.png" alt="Hotstar" />
+      <span>Hotstar</span>
+    </div>
+  </a>
+
+  {/* 🆓 FREE MOVIE */}
+  <a href="#free-movies" title="Watch Free Movies">
+    <div className="platform-item free-movie">
+      <img src="/logos/free-movie.png" alt="Free Movie" />
+      <span>Free Movie</span>
+    </div>
+  </a>
+</div>
+
 
       {loading && <p>Loading...</p>}
       {error && <p className="error">{error}</p>}
